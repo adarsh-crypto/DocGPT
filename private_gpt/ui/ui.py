@@ -29,7 +29,7 @@ THIS_DIRECTORY_RELATIVE = Path(__file__).parent.relative_to(PROJECT_ROOT_PATH)
 # Should be "private_gpt/ui/avatar-bot.ico"
 AVATAR_BOT = THIS_DIRECTORY_RELATIVE / "avatar-bot.ico"
 
-UI_TAB_TITLE = "My Private GPT"
+UI_TAB_TITLE = "DocGPT"
 
 SOURCES_SEPARATOR = "\n\n Sources: \n"
 
@@ -316,9 +316,6 @@ class PrivateGptUi:
             "#chatbot { flex-grow: 1 !important; overflow: auto !important;}"
             "#col { height: calc(100vh - 112px - 16px) !important; }",
         ) as blocks:
-            with gr.Row():
-                gr.HTML(f"<div class='logo'/><img src={logo_svg} alt=PrivateGPT></div")
-
             with gr.Row(equal_height=False):
                 with gr.Column(scale=3):
                     mode = gr.Radio(
