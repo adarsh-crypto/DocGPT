@@ -310,6 +310,7 @@ class PrivateGptUi:
             "justify-content: center;"
             "align-items: center;"
             "}"
+            "footer{visibility: hidden;}"
             ".logo img { height: 25% }"
             ".contain { display: flex !important; flex-direction: column !important; }"
             "#component-0, #component-3, #component-10, #component-8  { height: 100% !important; }"
